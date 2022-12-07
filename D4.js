@@ -127,10 +127,12 @@ console.log(characters);
   e inserisci solo oggetti di personaggi femminili 
   con questa struttura di esempio: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
-*/const femaleCharacters = [];
+*/
+const femaleCharacters = [];
 for (i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female") {
     femaleCharacters.push(starWarsCharacters[i]);
+    delete starWarsCharacters.heig
   }
 }
 console.log(femaleCharacters);
@@ -156,6 +158,19 @@ console.log(eyeColor);
   Utilizza uno switch statement per determinare in quale proprietà 
   inserire il personaggio
 */
+for (i=0; i<starWarsCharacters.length; i++){
+  let coloreOcchi= starWarsCharacters[i].eye_color
+  switch(coloreOcchi){
+    case "blue":
+    eyeColor.blue.push(starWarsCharacters[i])
+    break
+   case "blue-gray":
+    eyeColor["blue-gray"].push(starWarsCharacters[i])
+      break
+  }
+
+  
+}
 
 
 /* ESERCIZIO 6
