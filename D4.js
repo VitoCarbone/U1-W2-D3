@@ -176,7 +176,14 @@ for (i=0; i<starWarsCharacters.length; i++){
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
 */
-
+let contatore = 0;
+let massatotale = 0;
+while (contatore < starWarsCharacters.length) {
+  massatotale = massatotale + Number(starWarsCharacters[contatore].mass);
+  // console.log(massatotale);
+  contatore++;
+}
+console.log("massa totale del equipaggio: ", massatotale);
 
 /* ESERCIZIO 7
 
