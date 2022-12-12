@@ -198,6 +198,14 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+switch (true){
+  case mass < 500 console.log("Ship is under loaded")
+  break
+}
+
+
+
+
 
 /* ESERCIZIO 8
 
